@@ -6,7 +6,7 @@ Examples:
 
 For any array, rightmost element always has next greater element as -1.
 For an array which is sorted in decreasing order, all elements have next greater element as -1.
-For the input array [4, 5, 2, 25}, the next greater elements for each element are as follows.
+For the input array [4, 5, 2, 25], the next greater elements for each element are as follows.
 Element       NGE
    4      -->   5
    5      -->   25
@@ -52,7 +52,7 @@ public class nextGreaterEle
     }
     public static void main(String args[])
     {
-        int arr[]={4,5,2,25};
+        int arr[]={13, 7, 6, 12};
         findGreater(arr);
     }
 }

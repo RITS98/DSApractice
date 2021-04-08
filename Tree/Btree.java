@@ -50,8 +50,7 @@ public class Btree
                 break;
             }
             else
-                q.add(temp.right); 
-
+                q.add(temp.right);
         }
     }
     public static void main(String args[])

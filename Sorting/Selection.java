@@ -1,3 +1,5 @@
+//smallest is put in the correct position after each pass
+
 import java.util.*;
 public class Selection
 {

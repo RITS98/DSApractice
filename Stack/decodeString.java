@@ -1,4 +1,4 @@
-/*
+h/*
 An encoded string (s) is given, the task is to decode it. The pattern in which the strings were encoded were as follows
 original string: abbbababbbababbbab 
 encoded string : "3[a3[b]1[ab]]".

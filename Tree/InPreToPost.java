@@ -31,8 +31,8 @@ public class InPreToPost
         // If right subtree is not empty, 
         // print right subtree 
         if (root != n - 1) 
-            printPostOrder(Arrays.copyOfRange(in1, root+1, n), 
-                Arrays.copyOfRange(pre, 1+root, n), n - root - 1); 
+            printPostOrder(Arrays.copyOfRange(in1, root+1, n),Arrays.copyOfRange(pre, 1+root, n), n - root - 1); 
+        
         System.out.print( pre[0] + " "); 
     } 
 
