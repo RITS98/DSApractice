@@ -5,7 +5,6 @@ import java.io.*;
 
 class TernarySearch
 {
-    
     public static void main(String args[])throws IOException
     {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
