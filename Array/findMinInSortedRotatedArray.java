@@ -26,8 +26,7 @@ public class findMinInSortedRotatedArray
 		return pivotedBinarySearch(arr, mid + 1 , high);
 	}
 
-	public static int findMin(int arr[], 
-                          int low, int high) 
+	public static int findMin(int arr[], int low, int high) 
 	{ 
 	    while(low < high)
 	    {

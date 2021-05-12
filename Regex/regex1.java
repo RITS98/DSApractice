@@ -1,4 +1,4 @@
-import java.util.regex.*;
+rimport java.util.regex.*;
 
 public class regex1
 {

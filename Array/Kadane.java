@@ -75,7 +75,7 @@ public class Kadane
 		int n = arr.length;
 		int max_sum = Integer.MIN_VALUE, cur_sum = 0;
 
-		for(int i =0;i<n;i++)
+		for(int i = 0;i<n;i++)
 		{
 			cur_sum+= arr[i];
 			if(cur_sum>max_sum)
@@ -92,5 +92,6 @@ public class Kadane
 	{
 		int [] a = {-2, -3, 4, -1, -2, 1, 5, -3};
         System.out.println("Maximum contiguous sum is " + maxSubArraySum(a));
+        
 	}
 }

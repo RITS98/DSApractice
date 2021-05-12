@@ -59,7 +59,7 @@ public class findMaxSumUsingPivot
     public static void main(String args[])
     {
         // rotated input array
-        int arr[] = {8, 3, 1, 2};
+        int arr[] = {8, 9, 1, 2};
         int n = arr.length;
         int max = maxSum(arr,n);
         System.out.println(max);
