@@ -62,6 +62,38 @@ public class findInSortedRotatedArray
 
 
 
+	//Find in Rotated Array Compiled in GFG  Easier Method
+	int search(int A[], int low, int high, int key)
+    {
+        while(low<=high)
+        {
+            int mid = (low+high)/2;
+            
+            if(A[mid] == key)
+            return mid;
+            else if(A[low]<A[mid])
+            {
+                if(key>=A[low] && key<A[mid])
+                high = mid - 1;
+                else
+                low = mid + 1;
+            }
+            else
+            {
+                if(key > A[mid] && key<=A[high])
+                low = mid + 1;
+                else
+                high = mid - 1;
+            }
+        }
+        
+        return -1;
+        
+    }
+
+
+
+
 	public static int search(int arr[], int l, int h, int key)
     {
         if (l > h)
