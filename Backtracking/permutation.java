@@ -22,8 +22,6 @@ class permutation
 	}
 }
 
-// } Driver Code Ends
-
 
 class permuteSol {
     List<String> list = new ArrayList<String>();
