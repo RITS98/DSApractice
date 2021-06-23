@@ -1,4 +1,5 @@
 //StringBuffer faster speed
+//memorized
 class LCS
 {
     static int dp[][] = new int[1001][1001];
@@ -25,4 +26,28 @@ class LCS
         return dp[x][y] = Math.max(lcsFind(x-1,y,s1,s2),lcsFind(x,y-1,s1,s2));
     }
     
+}
+
+
+//Top down
+
+{
+	int dp[][] = new int[1001][1001];
+	for(int i=0;i<= n;i++)
+		dp[i][0] = 0;
+	for(int j = 0;j<=m;j++)
+		dp[0][j] = 0;
+
+	for(int i = 0;i<=n;i++)
+	{
+		for(int j = 0;j<=m;j++)
+		{
+			if(s1.charAt(i-1) == s2.charAt(j-1))
+				dp[i][j] = dp[i-1][j-1] + 1;
+			else
+				dp[i][j] = Math.max(dp[i-1][j],dp[i][j-1]);
+		}
+	}
+
+	return dp[n][m];
 }
